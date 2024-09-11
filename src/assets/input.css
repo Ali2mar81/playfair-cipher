@@ -1,0 +1,38 @@
+.focus {
+    padding-top: .8rem ;
+    & label {
+        font-family: 'roboto bold';
+        top: 0;
+        left: 2px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
+.btn {
+    & .btn--icon i {
+        scale: 0;
+    }
+}
+.btn:hover {
+    flex-grow: 4;
+    & .btn--icon {
+        & i {
+            scale: 1;
+        }
+    }
+    & .btn--txt {
+        transform: translateY(100%) translateX(-50%);
+    }
+}
+.answer {
+    transition: all 300ms ease-in-out;
+}
+.answer-close {
+    overflow: hidden;
+    padding: 0;
+    height: 0;
+}
+.answer-open {
+    height: 3rem;
+    padding: 0.8rem;
+}
